@@ -353,7 +353,7 @@ class Effect {
     if (this.size >= 0) {
       ctx.fillStyle = "rgba(0,128,255," + (1 - this.size) / 3 + ")"; //"hsla(" + this.size * 360 + ",100%,50%," + (1 - this.size) / 3 + ")";
       ctx.beginPath();
-      ctx.arc(this.x, this.y, Math.max(canvas.width, canvas.height) * this.size, 0, twoPI);
+//      ctx.arc(this.x, this.y, Math.max(canvas.width, canvas.height) * this.size, 0, twoPI);
       ctx.fill();
       ctx.closePath();
     }
