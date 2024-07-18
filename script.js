@@ -842,7 +842,7 @@ class Loading {
       let startAngle = (i - 1 + lastSegWidth) * (twoPI / numMaxSegments) + rotation + degs2rads(this.segments[i].offset) - degs2rads(0.4);
       let endAngle =
         (i - 1 + lastSegWidth + this.segments[i].width) * (twoPI / numMaxSegments) + rotation + degs2rads(this.segments[i].offset) + degs2rads(0.4);
-      ctx.arc(this.x, this.y, this.size * 0.75, startAngle, endAngle);
+    //  ctx.arc(this.x, this.y, this.size * 0.75, startAngle, endAngle);
       ctx.stroke();
       ctx.closePath();
       lastSegWidth = this.segments[i].width;
