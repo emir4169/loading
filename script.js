@@ -821,14 +821,12 @@ class Loading {
     //ctx.roundRect(this.x - this.r, this.y - this.r, this.r * 2, this.r * 2, this.r * 0.25).fill();
     //ctx.fillRect(this.x - this.r, this.y - this.r, this.r * 2, this.r * 2);
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, twoPI);
     ctx.fill();
     ctx.closePath();
 
     ctx.strokeStyle = theme.emptyColor;
     ctx.lineWidth = this.size * 0.25;
     ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size * 0.75, 0, twoPI);
     ctx.stroke();
     ctx.closePath();
 
